@@ -16,6 +16,7 @@ sudo apt-get install libx264-dev
 sudo apt-get install libfdk-aac-dev
 sudo apt-get install yasm
 mkdir ffmpeg_source
+cd ffmpeg_source
 git clone git://source.ffmpeg.org/ffmpeg.git
 cd ffmpeg
 ./configure --enable-gpl --enable-libx264 --enable-nonfree --enable-libfdk-aac
