@@ -8,3 +8,24 @@ I have chosen MP4 because it supported by all major browsers, including mobile b
 The log files and prefixes are designed such that the log file can be programatically read and the status of the encodes can be deduced easily by a program. I may include a status watch script (with ETA included) at a later date.
 
 Included is an example Transmission configuration file.
+
+Installation of ffmpeg requires compiling with x264 and fdk-aac support, the process for Ubuntu 16.04 is shown below
+
+<code>
+sudo apt-get install libx264-dev
+sudo apt-get install libfdk-aac-dev
+sudo apt-get install yasm
+mkdir ffmpeg_source
+git clone git://source.ffmpeg.org/ffmpeg.git
+cd ffmpeg
+./configure --enable-gpl --enable-libx264 --enable-nonfree --enable-libfdk-aac
+make
+make install
+ldconfig
+cp ffmpeg /usr/bin/
+cp ffprobe /usr/bin/
+cp ffserver /usr/bin
+</code>
+
+The programs `mediainfo` and `bc` are also used by the script and can be installed using
+`apt-get install mediainfo bc`
