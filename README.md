@@ -28,3 +28,5 @@ cp ffserver /usr/bin
 
 The programs `mediainfo` and `bc` are also used by the script and can be installed using
 `apt-get install mediainfo bc`
+
+* `bc` is now only used by the bash version of the script. The Perl version is recommended.
