@@ -12,9 +12,7 @@ Included is an example Transmission configuration file.
 Installation of ffmpeg requires compiling with x264 and fdk-aac support, the process for Ubuntu 16.04 is shown below
 
 ```
-sudo apt-get install libx264-dev
-sudo apt-get install libfdk-aac-dev
-sudo apt-get install yasm
+sudo apt-get install libx264-dev libfdk-aac-dev yasm git
 mkdir ffmpeg_source
 cd ffmpeg_source
 git clone git://source.ffmpeg.org/ffmpeg.git
