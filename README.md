@@ -26,6 +26,12 @@ cp ffprobe /usr/bin/
 cp ffserver /usr/bin
 ```
 
+There is also Perl module dependencies
+
+```
+cpan Sort::Naturally
+```
+
 The programs `mediainfo` and `bc` are also used by the script and can be installed using
 `apt-get install mediainfo bc`
 
